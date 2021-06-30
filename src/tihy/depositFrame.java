@@ -7,12 +7,14 @@ import java.awt.event.ActionListener;
 
 public class depositFrame implements ActionListener{
 
+
     JFrame frame;
     JPanel mainPanel;
     JTextField ammountField;
     JButton submitButton;
     JLabel addLabel;
     JButton toMainButton;
+
 
    public depositFrame(){
 
@@ -34,7 +36,6 @@ public class depositFrame implements ActionListener{
      toMainButton.setFocusable(false);
      toMainButton.setBounds(80,325,130,50);
      toMainButton.setText("BACK TO MAIN");
-     toMainButton.setVisible(false);
 
 
 
@@ -87,11 +88,13 @@ public class depositFrame implements ActionListener{
 
  @Override
  public void actionPerformed(ActionEvent e) {
+
   if(e.getSource()==submitButton){
+
    System.out.println("Deposited: "+ammountField.getText()+" KM");
    toMainButton.setVisible(true);
 
-
   }
+
  }
 }

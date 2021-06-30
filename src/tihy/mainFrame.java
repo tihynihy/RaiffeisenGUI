@@ -1,5 +1,7 @@
 package tihy;
 
+import dataBase.userData;
+
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
@@ -19,6 +21,7 @@ public class mainFrame extends JFrame implements ActionListener, MouseListener {
     userData user = new userData();
 
     public mainFrame(){
+
         frame = new JFrame();
         ImageIcon logo = new ImageIcon("logo.png");
         ImageIcon mainLogo = new ImageIcon("mainLogo.jpg");
@@ -39,7 +42,8 @@ public class mainFrame extends JFrame implements ActionListener, MouseListener {
         passField.setBounds(40,215,200,35);
         passField.setBorder(blackBorder);
         passField.setColumns( 20 );
-        passField.setText( "  Password" );
+
+
 
         button = new JButton();
         button.setText("LOG IN");
@@ -104,20 +108,20 @@ public class mainFrame extends JFrame implements ActionListener, MouseListener {
         }
         }
 
+        //notUsed
     @Override
     public void mouseClicked(MouseEvent e) {
 
     }
-
     @Override
     public void mousePressed(MouseEvent e) {
 
     }
-
     @Override
     public void mouseReleased(MouseEvent e) {
 
     }
+
 
     @Override
     public void mouseEntered(MouseEvent e) {
